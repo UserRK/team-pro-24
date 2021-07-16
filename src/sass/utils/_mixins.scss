@@ -8,16 +8,16 @@
     transition: $type 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 
-  @mixin fonts($fs, $fw, $lh, $ls: 0.01em) {
+  @mixin fonts($fs, $fw, $lh, $ls) {
     font-size: $fs;
     font-weight: $fw;
     line-height: $lh;
     letter-spacing: $ls;
   }
   @mixin for-size($range) {
-    $mobile: 320px;
+    $mobile: 480px;
     $tablet: 768px;
-    $desktop: 1200px;
+    $desktop: 1280px;
     @if $range == mobile-only {
       @media (max-width: #{$tablet - 1}) {
         @content;
