@@ -1,0 +1,41 @@
+.products__container {
+  padding-top: 121px;
+  padding-bottom: 98px;
+}
+
+.products__composition {
+  margin-bottom: 15px;
+  font-family: Titan One;
+  @include fonts(26px, 400, 1.154, 0.04);
+  text-transform: uppercase;
+  color: $pink-dark-bg;
+}
+
+.products__title {
+  margin-bottom: 49px;
+  font-family: Titan One;
+  @include fonts(48px, 400, 1.146, 0.04);
+  text-transform: uppercase;
+}
+
+.products__item {
+  background-color: $pink-icecream-bg;
+}
+
+.products__name {
+  margin-bottom: 30px;
+  font-family: Titan One;
+  @include fonts(20px, 400, 1.15, 0.04);
+  text-transform: uppercase;
+  color: $white;
+}
+
+// .products__name::after {
+//   background-image: url(../image/icons/colon.svg);
+// }
+
+.products__description {
+  margin-bottom: 30px;
+  @include fonts(14px, 700, 1.52, 0.04);
+  color: $white;
+}
