@@ -1,0 +1,78 @@
+.advantages {
+  background-color: $pink-light-bg;
+  margin: 0;
+  padding-top: 20px;
+  width: 100%;
+
+  &__li {
+    margin: 0;
+    width: 230px;
+  }
+  &__title {
+    @include fonts(36px, normal, 1.139, 0.04em);
+    font-family: Titan One;
+    color: $accent-color;
+  }
+  &__p {
+    @include fonts(12px, 700, 170%, 0.04em);
+    font-family: 'DM Sans';
+    display: block;
+    margin-bottom: 38px;
+  }
+  &__img {
+    margin-bottom: 16px;
+  }
+}
+
+@media screen and (min-width: 480px) {
+}
+
+@media screen and (min-width: 768px) {
+  .advantages {
+    @include centeredFlex;
+    padding-left: 36px;
+
+    &__li {
+      width: 180px;
+
+      &:not(:first-child) {
+        margin-left: 60px;
+      }
+    }
+    &__title {
+      @include fonts(48px, normal, 1.125, 0.04em);
+      display: block;
+      margin-bottom: 13px;
+    }
+    &__p {
+      @include fonts(14px, 700, 174%, 0.04em);
+    }
+    &__img {
+      margin-bottom: 36px;
+    }
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .advantages {
+    @include centeredFlex;
+    padding-left: 115px;
+
+    &__li {
+      width: 330px;
+      &:not(:first-child) {
+        margin-left: 30px;
+      }
+    }
+    &__title {
+      @include fonts(58px, normal, 1.034, 0.04em);
+      margin-bottom: 15px;
+    }
+    &__p {
+      @include fonts(16px, 700, 176%, 0.02em);
+    }
+    &__img {
+      margin-bottom: 40px;
+    }
+  }
+}
