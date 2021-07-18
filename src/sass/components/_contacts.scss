@@ -1,10 +1,12 @@
 .contacts {
-  background: $pink-light-bg;
+  background-image: linear-gradient(to bottom, $white 10%, $pink-light-bg 10%, $pink-light-bg 100%);
   padding-bottom: 68px;
+  @media screen and (min-width: 1280px) {
+    background-image: url('../images/contacts/contacts-bg.png');
+  }
 }
 .card {
   display: flex;
-
   justify-content: center;
   margin-bottom: 54px;
   @media screen and (max-width: 767px) {
@@ -146,6 +148,7 @@
   width: 161px;
   padding: 10px 17px;
   stroke: $white;
+  @include transition(background-color);
   @media screen and (min-width: 768px) {
     width: 191px;
     padding: 10px 30px;
@@ -158,6 +161,18 @@
     background: $white;
     color: $accent-color;
     stroke: $accent-color;
+  }
+}
+.contacts-btn__button--primary {
+  &:focus,
+  &:hover {
+    background: #c7133e;
+  }
+}
+.contacts-btn__button--secondary {
+  &:focus,
+  &:hover {
+    background: $button-hover;
   }
 }
 
