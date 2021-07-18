@@ -3,6 +3,7 @@
   width: 100%;
   background: linear-gradient(to bottom, $pink-light-bg 58%, $white 42%);
   &__img {
+    align-items: center;
     width: 100%;
   }
 }
@@ -11,6 +12,13 @@
 }
 
 @media screen and (min-width: 768px) {
+  .gallery {
+    &__wrapper {
+      max-width: 1010px;
+      height: auto;
+      margin: 0 auto;
+    }
+  }
 }
 
 @media screen and (min-width: 1280px) {
