@@ -1,0 +1,220 @@
+.products__container {
+  padding-top: 121px;
+  padding-bottom: 98px;
+  @include centeredFlex;
+  flex-direction: column;
+}
+
+.products__composition {
+  margin-bottom: 15px;
+  font-family: Titan One;
+  @include fonts(26px, 400, 1.154, 0.04);
+  text-transform: uppercase;
+  color: $pink-dark-bg;
+}
+
+.products__title {
+  margin-bottom: 144px;
+  font-family: Titan One;
+  @include fonts(48px, 400, 1.146, 0.04);
+  text-transform: uppercase;
+}
+
+.products__list {
+  @include centeredFlex;
+  flex-wrap: wrap;
+
+  @media screen and (min-width: 768px) {
+    justify-content: space-between;
+    margin-left: -20px;
+    margin-top: -20px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    margin-left: -23px;
+    margin-top: -23px;
+  }
+}
+
+.products__item {
+  position: relative;
+  text-align: center;
+  border-radius: 24px;
+  max-width: 280px;
+  padding-top: 161px;
+  padding-bottom: 41px;
+  &--ice-cream {
+    background-color: $pink-icecream-bg;
+  }
+  &--ice-coffee {
+    background-color: $ice-coffe-bg;
+  }
+  &--milkshakes {
+    background-color: $milkshakes-bg;
+  }
+
+  @media screen and (max-width: 767px) {
+    &:not(:last-child) {
+      margin-bottom: 130px;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    flex-basis: calc(100% / 3 - 20px);
+    margin-left: 20px;
+    margin-top: 20px;
+  }
+  @media screen and (min-width: 1280px) {
+    flex-basis: calc(100% / 3 - 23px);
+    margin-left: 23px;
+    margin-top: 23px;
+  }
+}
+
+.products__name {
+  margin-bottom: 30px;
+  font-family: Titan One;
+  @include fonts(20px, 400, 1.15, 0.04);
+  text-transform: uppercase;
+  color: $white;
+}
+
+.products__name--ice-cream::before {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 50%;
+  top: -22%;
+  transform: translateX(-50%);
+  margin-left: auto;
+  margin-right: auto;
+  width: 249px;
+  height: 252px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: url(../images/products/pink-ice-cream_320px_1x-min.png);
+
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background-image: url(../images/products/pink-ice-cream_320px_2x-min.png);
+  }
+  @media screen and (min-width: 480px) {
+    background-image: url(../images/products/pink-ice-cream_768px_1x-min.png);
+  }
+  @media (min-device-pixel-ratio: 2) and (min-width: 480px),
+    (min-resolution: 192dpi) and (min-width: 480px),
+    (min-resolution: 2dppx) and (min-width: 480px) {
+    background-image: url(../images/products/pink-ice-cream_768px_2x-min.png);
+  }
+  @media screen and (min-width: 768px) {
+    background-image: url(../images/products/pink-ice-cream_1280px_1x-min.png);
+  }
+  @media (min-device-pixel-ratio: 2) and (min-width: 768px),
+    (min-resolution: 192dpi) and (min-width: 768px),
+    (min-resolution: 2dppx) and (min-width: 768px) {
+    background-image: url(../images/products/pink-ice-cream_1280px_2x-min.png);
+  }
+}
+
+.products__name--ice-coffee::before {
+  content: '';
+  display: block;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  left: 50%;
+  top: -22%;
+  transform: translateX(-50%);
+  width: 249px;
+  height: 252px;
+  background-image: url(../images/products/ice-coffee_320px_1x-min.png);
+
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background-image: url(../images/products/ice-coffee_320px_2x-min.png);
+  }
+  @media screen and (min-width: 480px) {
+    background-image: url(../images/products/ice-coffee_768px_1x-min.png);
+  }
+  @media (min-device-pixel-ratio: 2) and (min-width: 480px),
+    (min-resolution: 192dpi) and (min-width: 480px),
+    (min-resolution: 2dppx) and (min-width: 480px) {
+    background-image: url(../images/products/ice-coffee_768px_2x-min.png);
+  }
+  @media screen and (min-width: 768px) {
+    background-image: url(../images/products/ice-coffee_1280px_1x-min.png);
+  }
+  @media (min-device-pixel-ratio: 2) and (min-width: 768px),
+    (min-resolution: 192dpi) and (min-width: 768px),
+    (min-resolution: 2dppx) and (min-width: 768px) {
+    background-image: url(../images/products/ice-coffee_1280px_2x-min.png);
+  }
+}
+
+.products__name--milkshakes::before {
+  content: '';
+  display: block;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  left: 50%;
+  top: -22%;
+  transform: translateX(-50%);
+  width: 249px;
+  height: 252px;
+  background-image: url(../images/products/milk-shake_320px_1x-min.png);
+
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background-image: url(../images/products/milk-shake_320px_2x-min.png);
+  }
+  @media screen and (min-width: 480px) {
+    background-image: url(../images/products/milk-shake_768px_1x-min.png);
+  }
+  @media (min-device-pixel-ratio: 2) and (min-width: 480px),
+    (min-resolution: 192dpi) and (min-width: 480px),
+    (min-resolution: 2dppx) and (min-width: 480px) {
+    background-image: url(../images/products/milk-shake_768px_2x-min.png);
+  }
+  @media screen and (min-width: 768px) {
+    background-image: url(../images/products/milk-shake_1280px_1x-min.png);
+  }
+  @media (min-device-pixel-ratio: 2) and (min-width: 768px),
+    (min-resolution: 192dpi) and (min-width: 768px),
+    (min-resolution: 2dppx) and (min-width: 768px) {
+    background-image: url(../images/products/milk-shake_1280px_2x-min.png);
+  }
+}
+
+.products__name::after {
+  content: '';
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 26px;
+  height: 6px;
+  margin-top: 30px;
+  background-image: url(../images/icons/colon.svg);
+  fill: $white;
+}
+
+.products__description {
+  margin-bottom: 30px;
+  @include fonts(14px, 700, 1.52, 0.04);
+  color: $white;
+}
+
+.products__link {
+  @include centeredFlex;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  background-color: $white;
+  color: $accent-color;
+}
+
+.icon-right {
+  fill: currentColor;
+}
