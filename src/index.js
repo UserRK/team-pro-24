@@ -1,4 +1,5 @@
 import './sass/main.scss';
+// burger-menu-------------------------------------------------------------/
 
 (() => {
   const refs = {
@@ -14,6 +15,8 @@ import './sass/main.scss';
     refs.menu.classList.toggle("is-open");
   }
 })();
+
+// modal-window----------------------------------------------------------/
 
 (() => {
   const refs = {
@@ -31,14 +34,3 @@ import './sass/main.scss';
 })();
 
 
-var grid = document.querySelector('.grid');
-var msnry = new Masonry( grid, {
-  // options...
-  itemSelector: '.grid-item',
-  columnWidth: 200
-});
-
-// init with selector
-var msnry = new Masonry( '.grid', {
-  // options...
-});

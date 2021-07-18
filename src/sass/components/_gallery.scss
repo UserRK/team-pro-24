@@ -1,0 +1,17 @@
+.gallery {
+  margin: 0 auto;
+  width: 100%;
+  background: linear-gradient(to bottom, $pink-light-bg 58%, $white 42%);
+  &__img {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 480px) {
+}
+
+@media screen and (min-width: 768px) {
+}
+
+@media screen and (min-width: 1280px) {
+}

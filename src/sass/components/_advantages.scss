@@ -7,6 +7,7 @@
   &__li {
     margin: 0;
     width: 230px;
+    position: relative;
   }
   &__title {
     @include fonts(36px, normal, 1.139, 0.04em);
@@ -18,6 +19,10 @@
     font-family: 'DM Sans';
     display: block;
     margin-bottom: 38px;
+  }
+  &__p:last-child {
+    margin-bottom: 0;
+    padding-bottom: 38px;
   }
   &__img {
     margin-bottom: 16px;
