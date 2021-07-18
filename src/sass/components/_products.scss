@@ -1,6 +1,8 @@
 .products__container {
   padding-top: 121px;
   padding-bottom: 98px;
+  @include centeredFlex;
+  flex-direction: column;
 }
 
 .products__composition {
@@ -16,6 +18,22 @@
   font-family: Titan One;
   @include fonts(48px, 400, 1.146, 0.04);
   text-transform: uppercase;
+}
+
+.products__list {
+  @include centeredFlex;
+  flex-wrap: wrap;
+
+  @media screen and (min-width: 768px) {
+    justify-content: space-between;
+    margin-left: -20px;
+    margin-top: -20px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    margin-left: -23px;
+    margin-top: -23px;
+  }
 }
 
 .products__item {
@@ -34,9 +52,31 @@
   &--milkshakes {
     background-color: $milkshakes-bg;
   }
-  &:not(:last-child) {
-    margin-bottom: 130px;
+
+  @media screen and (max-width: 767px) {
+    &:not(:last-child) {
+      margin-bottom: 130px;
+    }
   }
+
+  @media screen and (min-width: 768px) {
+    flex-basis: calc(100% / 3 - 20px);
+    margin-left: 20px;
+    margin-top: 20px;
+  }
+  @media screen and (min-width: 1280px) {
+    flex-basis: calc(100% / 3 - 23px);
+    margin-left: 23px;
+    margin-top: 23px;
+  }
+}
+
+.products__name {
+  margin-bottom: 30px;
+  font-family: Titan One;
+  @include fonts(20px, 400, 1.15, 0.04);
+  text-transform: uppercase;
+  color: $white;
 }
 
 .products__name--ice-cream::before {
@@ -144,14 +184,6 @@
     (min-resolution: 2dppx) and (min-width: 768px) {
     background-image: url(../images/products/milk-shake_1280px_2x-min.png);
   }
-}
-
-.products__name {
-  margin-bottom: 30px;
-  font-family: Titan One;
-  @include fonts(20px, 400, 1.15, 0.04);
-  text-transform: uppercase;
-  color: $white;
 }
 
 .products__name::after {
