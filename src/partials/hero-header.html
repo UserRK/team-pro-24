@@ -1,0 +1,91 @@
+<header class="header">
+    <div class="header__container">
+
+        <!-- Logo -->
+        <a href="./index.html" class="header__logo">
+        <img src="./images/hero-header/logo-header.svg" alt="icecream logo">
+        </a>
+
+        <!-- Navigation -->
+        <nav class="navigation"> 
+            <ul class="navigation__list list">
+                <li class="navigation__item navigation__item--active"><a href="#" class="navigation__link  navigation__link--active link">Home</a></li>
+                <li class="navigation__item"><a href="#" class="navigation__link  link">About us</a></li>
+                <li class="navigation__item"><a href="#" class="navigation__link link">How it's made?</a></li>
+                <li class="navigation__item"><a href="#" class="navigation__link link">Our products</a></li>
+                <li class="navigation__item"><a href="#" class="navigation__link link">Contact</a></li>
+            </ul>
+        </nav>
+
+        <!-- Header-Buttons -->
+        <div class="header__buttons">
+            <button type="button" class="header__button-menu">
+                <svg width="20" height="12" aria-label="mobile menu switcher">
+                    <use class="header__icon-menu" href="./images/icons/icon-defs.svg#icon-Burger" ></use>
+                </svg>
+            </button>
+            <button type="button" class="header__button-buy">Buy now
+                <svg width="4" height="8">
+                    <use class="header__icon-right" href="./images/icons/icon-defs.svg#icon-right"></use>
+                </svg>
+            </button>
+        </div>
+
+        <!-- Hero -->
+        <div class="hero-title">
+            <h1> 
+                <span class="hero-title__text-white">ice cream made with</span>
+                <span class="hero-title__text-rose">passion</span>  
+            </h1>
+            <ul class="hero-title__buttons-list list">
+                <li class="hero-title__buttons-item">
+                    <a href="#" class="hero-title__buttons-link--red link">Products</a>
+                </li>
+                <li class="hero-title__buttons-item">
+                    <a href="#" class="hero-title__buttons-link link">How it's made?</a>
+                </li>
+            </ul>
+        </div>   
+        <div class="hero-icecream">
+            <picture>
+                <source srcset="./images/hero-header/ice-cream_1280px_1x-min.png 1x, ./images/hero-header/ice-cream_1280px_2x-min.png 2x" media="(min-width: 1280px)">
+                <source srcset="./images/hero-header/ice-cream_768px_1x-min.png 1x, ./images/hero-header/ice-cream_768px_2x-min.png 2x" media="(min-width: 768px)">
+                <source srcset="./images/hero-header/ice-cream_320px_1x-min.png 1x, ./images/hero-header/ice-cream_320px_2x-min.png 2x" media="(min-width: 320px)">
+               
+                <img src="./images/hero-header/ice-cream_320px_1x-min.png" alt="icecream picture">
+            </picture>
+        </div>
+        <div class="hero-milk">
+            <picture>
+                <source srcset="./images/hero-header/milk_1280px_1x-min.png 1x, ./images/hero-header/milk_1280px_2x-min.png 2x" media="(min-width: 1280px)">
+                <source srcset="./images/hero-header/milk_768px_1x-min.png 1x, ./images/hero-header/milk_768px_2x-min.png 2x" media="(min-width: 768px)">
+               
+                <img src="./images/hero-header/milk_768px_1x-min.png" alt="milk picture">
+            </picture>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et</p>
+            <a href="#">
+                <svg width="15" height="15">
+                    <use class="hero-milk__icon-right" href="./images/icons/icon-defs.svg#icon-right"></use>
+                </svg>
+            </a>
+        </div>
+        <div class="hero-girl">
+            <picture>
+                <source srcset="./images/hero-header/girl_1280px_1x-min.png 1x, ./images/hero-header/girl_1280px_2x-min.png 2x" media="(min-width: 1280px)">
+                <source srcset="./images/hero-header/girl_768px_1x-min.png 1x, ./images/hero-header/girl_768px_2x-min.png 2x" media="(min-width: 768px)">
+                
+                <img src="./images/hero-header/girl_768px_1x-min.png" alt="girl picture">
+            </picture>
+        </div>
+        <div class="hero-decorations">
+            <ul class="hero-decorations__list list"> 
+                <li class="hero-decorations__item">
+                    <p class="hero-decorations__number">16<span class="hero-decorations__text">cafes</span></p>
+                </li>
+                <li class="hero-decorations__item">
+                    <p class="hero-decorations__number">23<span class="hero-decorations__text">food trucks</span></p>
+                </li>
+            </ul>
+        </div>
+    </div>
+</header>
