@@ -160,6 +160,11 @@
     (min-resolution: 2dppx) and (min-width: 768px) {
     background-image: url(../images/products/pink-ice-cream_1280px_2x-min.png);
   }
+  @media screen and (min-width: 1280px) {
+    top: -40%;
+    width: 335px;
+    height: 335px;
+  }
 }
 
 .products__item--ice-coffee::before {
@@ -196,6 +201,12 @@
     (min-resolution: 2dppx) and (min-width: 768px) {
     background-image: url(../images/products/ice-coffee_1280px_2x-min.png);
   }
+
+  @media screen and (min-width: 1280px) {
+    top: -40%;
+    width: 335px;
+    height: 335px;
+  }
 }
 
 .products__item--milkshakes::before {
@@ -231,6 +242,11 @@
     (min-resolution: 192dpi) and (min-width: 768px),
     (min-resolution: 2dppx) and (min-width: 768px) {
     background-image: url(../images/products/milk-shake_1280px_2x-min.png);
+  }
+  @media screen and (min-width: 1280px) {
+    top: -40%;
+    width: 335px;
+    height: 335px;
   }
 }
 
