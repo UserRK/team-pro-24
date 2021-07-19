@@ -1,13 +1,56 @@
 .about {
   text-align: center;
   background-color: $pink-light-bg;
-  padding: 125px 20px 39px 20px;
-  @media screen and (min-width: 768px) {
-    padding: 130px 36px 66px 39px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-size: 100%;
+  background-position-x: center;
+
+  @media screen and (max-width: 767px) {
+    background-image: url(../images/about/milk-bg_320px_1x-min.png);
+    background-position-y: 79%;
+    padding-bottom: 140px;
+  }
+
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background-image: url(../images/about/milk-bg_320px_2x-min.png);
+  }
+  // @media screen and (min-width: 480px) and (max-width: 767px) {
+  //   background-image: url(../images/about/milk-bg_320px_1x-min.png);
+  // }
+  @media (min-device-pixel-ratio: 2) and (min-width: 480px) and (max-width: 767px),
+    (min-resolution: 192dpi) and (min-width: 480px) and (max-width: 767px),
+    (min-resolution: 2dppx) and (min-width: 480px) and (max-width: 767px) {
+    background-image: url(../images/about/milk-bg_320px_2x-min.png);
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
+    background-image: none;
   }
 
   @media screen and (min-width: 1280px) {
-    padding: 125px 112px 39px 117px;
+    background-image: url(../images/about/milk-bg_1280px_1x-min.png);
+    background-position-y: 50%;
+  }
+  @media (min-device-pixel-ratio: 2) and (min-width: 1280px),
+    (min-resolution: 192dpi) and (min-width: 1280px),
+    (min-resolution: 2dppx) and (min-width: 1280px) {
+    background-image: url(../images/about/milk-bg_1280px_2x-min.png);
+  }
+}
+
+.about__container {
+  padding-top: 125px;
+  padding-bottom: 19px;
+
+  @media screen and (min-width: 768px) {
+    padding-top: 130px;
+    padding-bottom: 46px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    padding-top: 125px;
+    padding-bottom: 19px;
   }
 }
 
@@ -40,60 +83,35 @@
 }
 
 .about__div {
-  // margin-left: auto;
-  // margin-right: auto;
-  // // height: 535px;
-  // max-width: 320px;
-
-  @include centeredFlex;
-  flex-direction: column;
-
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-
-  background-image: url(../images/about/milk-bg_320px_1x-min.png);
-
-  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-    background-image: url(../images/about/milk-bg_320px_2x-min.png);
-  }
-  @media screen and (min-width: 480px) {
-    background-image: url(../images/about/milk-bg_320px_1x-min.png);
-  }
-  @media (min-device-pixel-ratio: 2) and (min-width: 480px) and (max-width: 767px),
-    (min-resolution: 192dpi) and (min-width: 480px) and (max-width: 767px),
-    (min-resolution: 2dppx) and (min-width: 480px) and (max-width: 767px) {
-    background-image: url(../images/about/milk-bg_320px_2x-min.png);
-  }
-  @media screen and (min-width: 768px) and (max-width: 1279px) {
-    background-image: none;
+  @media screen and (min-width: 768px) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 17px;
   }
 
   @media screen and (min-width: 1280px) {
-    background-image: url(../images/about/milk-bg_1280px_1x-min.png);
-    max-width: 1280px;
-  }
-  @media (min-device-pixel-ratio: 2) and (min-width: 1280px),
-    (min-resolution: 192dpi) and (min-width: 1280px),
-    (min-resolution: 2dppx) and (min-width: 1280px) {
-    background-image: url(../images/about/milk-bg_1280px_2x-min.png);
+    gap: 74px;
   }
 }
 
 .about__picture {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+
   @media screen and (max-width: 767px) {
     margin-bottom: 46px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    max-width: 516px;
   }
 }
 
 .about__wrap {
-  // margin-left: auto;
-  // margin-right: auto;
-  // height: 133px;
-
-  // background-repeat: no-repeat;
-  // background-position: center;
-  // background-size: cover;
+  text-align: start;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
 .about__text {
@@ -114,19 +132,33 @@
   &--grey {
     color: $text;
     margin-bottom: 17px;
+    @media screen and (min-width: 768px) {
+      margin-bottom: 62px;
+    }
+
     @media screen and (min-width: 1280px) {
       @include fonts(14px, 500, 1.94, 0.04);
+      margin-bottom: 45px;
     }
   }
 }
 
 .about__button {
+  margin-left: auto;
+  margin-right: auto;
+  font-style: inherit;
   @include button($white, $accent-color, 14px, 1.286);
   font-weight: 700;
   height: 44px;
-  padding-left: 37px;
-  padding-right: 37px;
+  width: 176px;
   color: $accent-color;
+
+  @media screen and (min-width: 768px) {
+    margin: 0;
+  }
+
+  @media screen and (min-width: 1280px) {
+  }
 }
 
 .about__icon {
