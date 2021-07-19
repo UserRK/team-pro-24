@@ -65,6 +65,7 @@
     @include fonts(36px, normal, 1.139, 0.04em);
     font-family: Titan One;
     color: $accent-color;
+    padding-top: 66px;
   }
   &__p {
     @include fonts(12px, 700, 170%, 0.04em);
@@ -100,6 +101,7 @@
       @include fonts(48px, normal, 1.125, 0.04em);
       display: block;
       margin-bottom: 13px;
+      padding-top: 86px;
     }
     &__p {
       @include fonts(14px, 700, 174%, 0.04em);
@@ -130,6 +132,7 @@
     &__title {
       @include fonts(58px, normal, 1.034, 0.04em);
       margin-bottom: 15px;
+      padding-top: 90px;
     }
     &__p {
       @include fonts(16px, 700, 176%, 0.02em);
