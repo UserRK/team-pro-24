@@ -1,9 +1,6 @@
 .contacts {
   background-image: linear-gradient(to bottom, $white 10%, $pink-light-bg 10%, $pink-light-bg 100%);
   padding-bottom: 68px;
-  @media screen and (min-width: 1280px) {
-    background-image: url('../images/contacts/contacts-bg.png');
-  }
 }
 .card {
   display: flex;
@@ -20,6 +17,16 @@
   }
   @media screen and (min-width: 1280px) {
     margin-bottom: 86px;
+    background-image: url('../images/contacts/contacts-bg.png');
+    background-size: 1280px 382px;
+  }
+}
+@media (min-device-pixel-ratio: 2) and (min-width: 1280px),
+  (min-resolution: 192dpi) and (min-width: 1280px),
+  (min-resolution: 2dppx) and (min-width: 1280px) {
+  .card {
+    background-image: url(../images/contacts/contacts-bg@2x.png);
+    background-size: 1280px 382px;
   }
 }
 .card__list {
