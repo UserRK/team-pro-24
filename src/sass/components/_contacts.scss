@@ -1,6 +1,12 @@
 .contacts {
   background-image: linear-gradient(to bottom, $white 10%, $pink-light-bg 10%, $pink-light-bg 100%);
-  padding-bottom: 68px;
+  padding-bottom: 113px;
+  @media screen and (min-width: 768px) {
+    padding-bottom: 158px;
+  }
+  @media screen and (min-width: 1280px) {
+    padding-bottom: 165px;
+  }
 }
 .card {
   display: flex;
@@ -41,15 +47,17 @@
     }
     @media screen and (min-width: 768px) {
       margin-right: 20px;
-      padding: 50px 31px;
     }
     @media screen and (min-width: 1280px) {
       margin-right: 30px;
-      padding: 51px 43px;
     }
+  }
+  @media screen and (min-width: 768px) {
+    padding: 50px 31px;
   }
   @media screen and (min-width: 1280px) {
     width: 330px;
+    padding: 51px 43px;
   }
 }
 .contacts-btn {
