@@ -1,10 +1,9 @@
 .contacts {
-  background: $pink-light-bg;
+  background-image: linear-gradient(to bottom, $white 10%, $pink-light-bg 10%, $pink-light-bg 100%);
   padding-bottom: 68px;
 }
 .card {
   display: flex;
-
   justify-content: center;
   margin-bottom: 54px;
   @media screen and (max-width: 767px) {
@@ -18,11 +17,21 @@
   }
   @media screen and (min-width: 1280px) {
     margin-bottom: 86px;
+    background-image: url('../images/contacts/contacts-bg.png');
+    background-size: 1280px 382px;
+  }
+}
+@media (min-device-pixel-ratio: 2) and (min-width: 1280px),
+  (min-resolution: 192dpi) and (min-width: 1280px),
+  (min-resolution: 2dppx) and (min-width: 1280px) {
+  .card {
+    background-image: url(../images/contacts/contacts-bg@2x.png);
+    background-size: 1280px 382px;
   }
 }
 .card__list {
   padding: 43px 20px;
-  background: #ffffff;
+  background: $white;
   box-shadow: $shadow;
   border-radius: 24px;
   width: 220px;
@@ -32,6 +41,11 @@
     }
     @media screen and (min-width: 768px) {
       margin-right: 20px;
+      padding: 50px 31px;
+    }
+    @media screen and (min-width: 1280px) {
+      margin-right: 30px;
+      padding: 51px 43px;
     }
   }
   @media screen and (min-width: 1280px) {
@@ -40,7 +54,6 @@
 }
 .contacts-btn {
   display: flex;
-
   justify-content: center;
   @media screen and (max-width: 767px) {
     align-items: center;
@@ -49,7 +62,7 @@
 }
 
 .card__category {
-  background: #f0d1a5;
+  background: $ice-coffe-bg;
   width: 80px;
   color: $white;
   margin-bottom: 25px;
@@ -86,20 +99,20 @@
 .card__text {
   color: $text;
   margin-bottom: 25px;
-  @include fonts(12px, 500, 1.86, 0.04em);
+  @include fonts(12px, 500, 1.5, 0.04em);
   letter-spacing: normal;
   &::after {
     content: '';
     margin-top: 25px;
-    border-bottom: 1px solid #e1e1e1;
+    border-bottom: 1px solid $pseudo-element;
     display: block;
     width: 100%;
   }
   @media screen and (min-width: 768px) {
-    font-size: 14px;
+    @include fonts(14px, 500, 1.66, 0.04em);
   }
   @media screen and (min-width: 1280px) {
-    font-size: 16px;
+    @include fonts(16px, 500, 1.83, 0.04em);
   }
 }
 .card__day,
@@ -120,7 +133,7 @@
   &:last-child::after {
     content: '';
     margin-top: 25px;
-    border-bottom: 1px solid #e1e1e1;
+    border-bottom: 1px solid $pseudo-element;
     display: block;
     width: 100%;
   }
@@ -146,6 +159,7 @@
   width: 161px;
   padding: 10px 17px;
   stroke: $white;
+  @include transition(background-color);
   @media screen and (min-width: 768px) {
     width: 191px;
     padding: 10px 30px;
@@ -160,7 +174,18 @@
     stroke: $accent-color;
   }
 }
-
+.contacts-btn__button--primary {
+  &:focus,
+  &:hover {
+    background: $button-hover-accent;
+  }
+}
+.contacts-btn__button--secondary {
+  &:focus,
+  &:hover {
+    background: $button-hover;
+  }
+}
 .contacts-btn__list {
   &:not(:last-child) {
     margin-bottom: 10px;

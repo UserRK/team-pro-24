@@ -1,0 +1,70 @@
+.customer {
+  padding-top: 123px;
+  padding-bottom: 132px;
+  &__img {
+    margin: 15px;
+  }
+}
+.customer__card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.customer__text {
+  width: 280px;
+  background: $text-bg;
+  padding: 40px 60px 20px;
+  text-align: center;
+  margin-bottom: 30px;
+  background-image: url('../images/icons/quotes.svg');
+  background-repeat: no-repeat;
+  background-position: left 60px top 30px;
+  @media screen and (min-width: 768px) {
+    width: 620px;
+    margin-bottom: 24px;
+  }
+  @media screen and (min-width: 1280px) {
+    width: 926px;
+    margin-bottom: 15px;
+  }
+}
+.customer__underline {
+  @include fonts(12px, 500, 2.55, 0.04em);
+  display: inline-block;
+  background-size: 100%;
+  text-align: center;
+  background-image: repeating-linear-gradient(
+    transparent,
+    transparent 29px,
+    $pseudo-element 0,
+    $pseudo-element 30px
+  );
+  @media screen and (min-width: 768px) {
+    @include fonts(14px, 500, 2.16, 0.04em);
+  }
+  @media screen and (min-width: 1280px) {
+    @include fonts(16px, 500, 1.86, 0.04em);
+  }
+}
+.customer__name {
+  @include fonts(14px, 500, 1.86, 0.04em);
+  text-align: center;
+  @include centeredFlex;
+  flex-direction: column;
+  &::before {
+    content: '';
+    background-image: url(../images/icons/dots.svg);
+    width: 32px;
+    height: 4px;
+    background-repeat: no-repeat;
+    display: inline-block;
+    margin-bottom: 15px;
+  }
+  @media screen and (min-width: 768px) {
+    @include fonts(16px, 500, 1.86, 0.04em);
+  }
+  @media screen and (min-width: 1280px) {
+    @include fonts(20px, 500, 1.86, 0.04em);
+  }
+}
