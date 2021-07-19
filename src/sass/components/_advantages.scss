@@ -52,6 +52,12 @@
     &__p {
       @include fonts(14px, 700, 174%, 0.04em);
     }
+
+    &__p:last-child {
+      margin-bottom: 0;
+      padding-bottom: 140px;
+    }
+
     &__img {
       margin-bottom: 36px;
     }
@@ -76,6 +82,12 @@
     &__p {
       @include fonts(16px, 700, 176%, 0.02em);
     }
+
+    &__p:last-child {
+      margin-bottom: 0;
+      padding-bottom: 139px;
+    }
+
     &__img {
       margin-bottom: 40px;
     }
