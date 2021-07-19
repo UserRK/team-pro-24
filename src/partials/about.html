@@ -1,23 +1,32 @@
 <section class="about">
     <div class="container">
-        <p>Tradition and love</p>
-        <h2>How it’s made?</h2>
-        <picture>
-            <source srcset="./images/about/cow_320px_1x-min.png 1x, ./images/about/cow_320px_2x-min.png 2x"
-                        media="(min-width: 480px)">
-            <source srcset="./images/about/cow_768px_1x-min.png 1x, ./images/about/cow_768px_2x-min.png 2x"
-                        media="(min-width: 768px)">
-            <source srcset="./images/about/cow_1280px_1x-min.png 1x, ./images/about/cow_1280px_2x-min.png 2x"
-                        media="(min-width: 1280px)">
-            <img class="" src="./images/about/cow_320px_1x-min.png" alt="Корова"/>
-        </picture>
-        <p>
-            Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel justo cursus, faucibus lorem eget, egestas eros. Maecenas eleifend erat at justo fringilla.
-        </p>
-        <p>
-            Curabitur lacinia enim at ex blandit, vel pellentesque odio elementum. Mauris rhoncus orci in imperdiet placerat. Vestibulum euismod nisl suscipit ligula volutpat, a feugiat urna maximus. Cras massa nibh, tincidunt.
-        </p>
-        <p>Aliquam erat volutpat. Aenean accumsan.</p>
-        <button type="button">Read more</button>
+        <p class="about__composition">Tradition and love</p>
+        <h2 class="about__title">How it’s made?</h2>
+        <div class="about__div">
+            <picture>
+                <source srcset="./images/about/cow_320px_1x-min.png 1x, ./images/about/cow_320px_2x-min.png 2x"
+                            media="(min-width: 480px)">
+                <source srcset="./images/about/cow_768px_1x-min.png 1x, ./images/about/cow_768px_2x-min.png 2x"
+                            media="(min-width: 768px)">
+                <source srcset="./images/about/cow_1280px_1x-min.png 1x, ./images/about/cow_1280px_2x-min.png 2x"
+                            media="(min-width: 1280px)">
+                <img class="about__picture" src="./images/about/cow_320px_1x-min.png" alt="Корова"/>
+            </picture>
+            <div class="about__wrap">
+            <p class="about__text about__text--black">
+                Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel justo cursus, faucibus lorem eget, egestas eros. Maecenas eleifend erat at justo fringilla.
+            </p>
+            
+            <p class="about__text about__text--grey">
+                Curabitur lacinia enim at ex blandit, vel pellentesque odio elementum. Mauris rhoncus orci in imperdiet placerat. Vestibulum euismod nisl suscipit ligula volutpat, a feugiat urna maximus. Cras massa nibh, tincidunt.
+            <br /><br />
+            Aliquam erat volutpat. Aenean accumsan.</p>
+            </div>
+            <button class="about__button" type="button">Read more
+                <svg class="about__icon" width="4px" height="8px">
+                    <use>href="./images/icons/icon-defs.svg#icon-right"</use>
+                </svg>
+            </button>
+        </div>
     </div>
 </section>

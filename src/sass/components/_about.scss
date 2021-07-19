@@ -1,4 +1,68 @@
 .about {
+  text-align: center;
+  background-color: $pink-light-bg;
+  padding: 125px 20px 39px 20px;
+  @media screen and (min-width: 768px) {
+    padding: 130px 36px 66px 39px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    padding: 125px 112px 39px 117px;
+  }
+}
+
+.about__composition {
+  margin-bottom: 15px;
+  font-family: Titan One;
+  @include fonts(26px, 400, 1.154, 0.04);
+  text-transform: uppercase;
+  color: $pink-dark-bg;
+
+  @media screen and (min-width: 1280px) {
+    @include fonts(30px, 400, 1.133, 0.04);
+  }
+}
+
+.about__title {
+  margin-bottom: 26px;
+  font-family: Titan One;
+  @include fonts(48px, 400, 1.146, 0.04);
+  text-transform: uppercase;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 50px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    @include fonts(58px, 400, 1.138, 0.04);
+    margin-bottom: 55px;
+  }
+}
+
+// .about__wrap {
+//   margin-left: auto;
+//   margin-right: auto;
+//   height: 133px;
+
+//   background-repeat: no-repeat;
+//   background-position: center;
+//   background-size: cover;
+
+// }
+
+.about__div {
+  // margin-left: auto;
+  // margin-right: auto;
+  // // height: 535px;
+  // max-width: 320px;
+
+  @include centeredFlex;
+  flex-direction: column;
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
   background-image: url(../images/about/milk-bg_320px_1x-min.png);
 
   @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
@@ -12,16 +76,63 @@
     (min-resolution: 2dppx) and (min-width: 480px) and (max-width: 767px) {
     background-image: url(../images/about/milk-bg_320px_2x-min.png);
   }
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
+    background-image: none;
+  }
+
   @media screen and (min-width: 1280px) {
     background-image: url(../images/about/milk-bg_1280px_1x-min.png);
+    max-width: 1280px;
   }
   @media (min-device-pixel-ratio: 2) and (min-width: 1280px),
     (min-resolution: 192dpi) and (min-width: 1280px),
     (min-resolution: 2dppx) and (min-width: 1280px) {
     background-image: url(../images/about/milk-bg_1280px_2x-min.png);
   }
+}
 
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+.about__picture {
+  @media screen and (max-width: 767px) {
+    margin-bottom: 46px;
+  }
+}
+
+.about__text {
+  @include fonts(12px, 500, 1.62, 0.04);
+
+  @media screen and (min-width: 768px) {
+    @include fonts(14px, 500, 1.76, 0.04);
+  }
+
+  &--black {
+    color: $black;
+    margin-bottom: 37px;
+    @media screen and (min-width: 1280px) {
+      @include fonts(16px, 500, 1.76, 0.04);
+    }
+  }
+
+  &--grey {
+    color: $text;
+    margin-bottom: 17px;
+    @media screen and (min-width: 1280px) {
+      @include fonts(14px, 500, 1.94, 0.04);
+    }
+  }
+}
+
+.about__button {
+  @include button(#ccc, $accent-color, 14px, 1.286);
+  font-weight: 700;
+  height: 44px;
+  padding-left: 37px;
+  padding-right: 37px;
+  color: $accent-color;
+}
+
+.about__icon {
+  height: 8px;
+  width: 4px;
+  stroke: $accent-color;
+  margin-left: 13px;
 }
