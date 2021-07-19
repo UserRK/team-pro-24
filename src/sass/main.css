@@ -1402,7 +1402,7 @@ img {
 }
 
 .about__button {
-  background-color: #ccc;
+  background-color: #ffffff;
   color: #d41443;
   font-size: 14px;
   line-height: 1.286;
@@ -1428,7 +1428,7 @@ img {
 .about__icon {
   height: 8px;
   width: 4px;
-  stroke: #d41443;
+  stroke: currentColor;
   margin-left: 13px;
 }
 

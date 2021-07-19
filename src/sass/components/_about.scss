@@ -39,17 +39,6 @@
   }
 }
 
-// .about__wrap {
-//   margin-left: auto;
-//   margin-right: auto;
-//   height: 133px;
-
-//   background-repeat: no-repeat;
-//   background-position: center;
-//   background-size: cover;
-
-// }
-
 .about__div {
   // margin-left: auto;
   // margin-right: auto;
@@ -97,6 +86,16 @@
   }
 }
 
+.about__wrap {
+  // margin-left: auto;
+  // margin-right: auto;
+  // height: 133px;
+
+  // background-repeat: no-repeat;
+  // background-position: center;
+  // background-size: cover;
+}
+
 .about__text {
   @include fonts(12px, 500, 1.62, 0.04);
 
@@ -122,7 +121,7 @@
 }
 
 .about__button {
-  @include button(#ccc, $accent-color, 14px, 1.286);
+  @include button($white, $accent-color, 14px, 1.286);
   font-weight: 700;
   height: 44px;
   padding-left: 37px;
@@ -133,6 +132,6 @@
 .about__icon {
   height: 8px;
   width: 4px;
-  stroke: $accent-color;
+  stroke: currentColor;
   margin-left: 13px;
 }
