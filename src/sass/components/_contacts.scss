@@ -1,6 +1,12 @@
 .contacts {
   background-image: linear-gradient(to bottom, $white 10%, $pink-light-bg 10%, $pink-light-bg 100%);
-  padding-bottom: 68px;
+  padding-bottom: 113px;
+  @media screen and (min-width: 768px) {
+    padding-bottom: 158px;
+  }
+  @media screen and (min-width: 1280px) {
+    padding-bottom: 165px;
+  }
 }
 .card {
   display: flex;
