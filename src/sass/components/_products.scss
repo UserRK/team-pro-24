@@ -1,8 +1,24 @@
 .products__container {
   padding-top: 121px;
   padding-bottom: 98px;
+  padding-left: 20px;
+  padding-right: 20px;
   @include centeredFlex;
   flex-direction: column;
+
+  @media screen and (min-width: 768px) {
+    padding-top: 122px;
+    padding-bottom: 112px;
+    padding-left: 34px;
+    padding-right: 34px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    padding-top: 127px;
+    padding-bottom: 119px;
+    padding-left: 112px;
+    padding-right: 112px;
+  }
 }
 
 .products__composition {
@@ -11,6 +27,10 @@
   @include fonts(26px, 400, 1.154, 0.04);
   text-transform: uppercase;
   color: $pink-dark-bg;
+
+  @media screen and (min-width: 1280px) {
+    @include fonts(30px, 400, 1.133, 0.04);
+  }
 }
 
 .products__title {
@@ -18,6 +38,15 @@
   font-family: Titan One;
   @include fonts(48px, 400, 1.146, 0.04);
   text-transform: uppercase;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 150px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    @include fonts(58px, 400, 1.138, 0.04);
+    margin-bottom: 259px;
+  }
 }
 
 .products__list {
@@ -31,6 +60,7 @@
   }
 
   @media screen and (min-width: 1280px) {
+    justify-content: space-between;
     margin-left: -23px;
     margin-top: -23px;
   }
@@ -43,6 +73,8 @@
   max-width: 280px;
   padding-top: 161px;
   padding-bottom: 41px;
+  padding-left: 40px;
+  padding-right: 40px;
   &--ice-cream {
     background-color: $pink-icecream-bg;
   }
@@ -60,14 +92,26 @@
   }
 
   @media screen and (min-width: 768px) {
+    min-width: 220px;
     flex-basis: calc(100% / 3 - 20px);
     margin-left: 20px;
     margin-top: 20px;
+    padding-top: 152px;
+    padding-bottom: 40px;
+    padding-left: 11px;
+    padding-right: 11px;
   }
+
   @media screen and (min-width: 1280px) {
+    min-width: 335px;
     flex-basis: calc(100% / 3 - 23px);
     margin-left: 23px;
     margin-top: 23px;
+
+    padding-top: 163px;
+    padding-bottom: 50px;
+    padding-left: 44px;
+    padding-right: 44px;
   }
 }
 
@@ -79,7 +123,7 @@
   color: $white;
 }
 
-.products__name--ice-cream::before {
+.products__item--ice-cream::before {
   content: '';
   display: block;
   position: absolute;
@@ -108,15 +152,21 @@
   }
   @media screen and (min-width: 768px) {
     background-image: url(../images/products/pink-ice-cream_1280px_1x-min.png);
+    width: 220px;
   }
   @media (min-device-pixel-ratio: 2) and (min-width: 768px),
     (min-resolution: 192dpi) and (min-width: 768px),
     (min-resolution: 2dppx) and (min-width: 768px) {
     background-image: url(../images/products/pink-ice-cream_1280px_2x-min.png);
   }
+  @media screen and (min-width: 1280px) {
+    top: -40%;
+    width: 335px;
+    height: 335px;
+  }
 }
 
-.products__name--ice-coffee::before {
+.products__item--ice-coffee::before {
   content: '';
   display: block;
   background-repeat: no-repeat;
@@ -143,15 +193,22 @@
   }
   @media screen and (min-width: 768px) {
     background-image: url(../images/products/ice-coffee_1280px_1x-min.png);
+    width: 220px;
   }
   @media (min-device-pixel-ratio: 2) and (min-width: 768px),
     (min-resolution: 192dpi) and (min-width: 768px),
     (min-resolution: 2dppx) and (min-width: 768px) {
     background-image: url(../images/products/ice-coffee_1280px_2x-min.png);
   }
+
+  @media screen and (min-width: 1280px) {
+    top: -40%;
+    width: 335px;
+    height: 335px;
+  }
 }
 
-.products__name--milkshakes::before {
+.products__item--milkshakes::before {
   content: '';
   display: block;
   background-repeat: no-repeat;
@@ -178,11 +235,17 @@
   }
   @media screen and (min-width: 768px) {
     background-image: url(../images/products/milk-shake_1280px_1x-min.png);
+    width: 220px;
   }
   @media (min-device-pixel-ratio: 2) and (min-width: 768px),
     (min-resolution: 192dpi) and (min-width: 768px),
     (min-resolution: 2dppx) and (min-width: 768px) {
     background-image: url(../images/products/milk-shake_1280px_2x-min.png);
+  }
+  @media screen and (min-width: 1280px) {
+    top: -40%;
+    width: 335px;
+    height: 335px;
   }
 }
 
@@ -199,9 +262,23 @@
 }
 
 .products__description {
+  display: block;
   margin-bottom: 30px;
   @include fonts(14px, 700, 1.52, 0.04);
   color: $white;
+
+  @media screen and (min-width: 768px) {
+    @include fonts(14px, 700, 1.76, 0.04);
+    margin-bottom: 40px;
+    max-height: 124px;
+    overflow: hidden;
+  }
+
+  @media screen and (min-width: 1280px) {
+    @include fonts(16px, 700, 1.76, 0.04);
+    margin-bottom: 62px;
+    max-height: 106px;
+  }
 }
 
 .products__link {
