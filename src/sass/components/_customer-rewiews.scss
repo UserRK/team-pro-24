@@ -96,6 +96,7 @@
   background: $dots;
   border: none;
   cursor: pointer;
+  @include transition(background-color);
   &:hover,
   &:focus {
     background: $button-hover;
