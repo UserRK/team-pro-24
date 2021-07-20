@@ -161,7 +161,8 @@
     margin: 0;
   }
 
-  @media screen and (min-width: 1280px) {
+  &:hover {
+    background-color: $button-hover;
   }
 }
 
