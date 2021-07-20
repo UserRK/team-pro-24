@@ -234,11 +234,12 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  padding: 40px;
-  max-height: 500px;
-  background-image: radial-gradient(circle, $pink-light-bg 0%, rgba(255, 165, 186, 0.8) 100%);
+  padding: 90px 40px;
+  max-width: 100%;
+  max-height: 600px;
+  background-image: url('../images/modal/modal-roof.png'), url('../images/modal/modal-bg-pink.jpg');
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100% 100%;
   box-shadow: $shadow;
   border-radius: var(--border-radius);
   display: flex;
@@ -277,36 +278,30 @@
   font-size: 34px;
   line-height: 1.14;
   text-align: center;
-  color: $accent-color;
-  margin-bottom: 20px;
-  width: 300px;
-  height: 50px;
-  background-image: url('../images/about/milk-bg_320px_1x-min.png');
+  color: $white;
+  text-transform: uppercase;
+  text-shadow: 4px 3px 4px rgba(0, 0, 0, 0.5);
+  margin-bottom: 10px;
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 20px;
+  }
 }
 .modal__maps {
   position: relative;
-  min-width: 320px;
-  min-height: 320px;
-  position: relative;
-
+  padding: 20px;
+  background: $white;
+  box-shadow: $shadow;
+  border-radius: 10px;
   &::after {
     position: absolute;
+    right: -40%;
+    top: 95%;
     content: '';
     display: block;
-    top: 50%;
-    right: 50%;
     width: 200px;
     height: 200px;
-    background-image: url('../images/modal/modal-after.png');
-    background-size: contain;
+    background-image: url('../images/modal/ice-bg.png');
     background-repeat: no-repeat;
-    @media screen and (min-width: 768px) {
-      width: 250px;
-      height: 250px;
-    }
-    @media screen and (min-width: 1280px) {
-      width: 400px;
-      height: 400px;
-    }
+    background-size: contain;
   }
 }
