@@ -8,10 +8,10 @@
     color: $pink-dark-bg;
     @include fonts(18px, normal, 1.167, normal);
     margin-bottom: 17px;
-    @media screen and(min: width 768px) {
+    @media screen and(min-width: 768px) {
       @include fonts(26px, normal, 1.154, 0.04em);
     }
-    @media screen and(min: width 1200px) {
+    @media screen and(min-width: 1280px) {
       @include fonts(30px, normal, 1.133, 0.04em);
     }
   }
@@ -23,6 +23,14 @@
     line-height: 100%;
     @include fonts(34px, normal, 1.147, 00.04em);
     margin-bottom: 43px;
+    @media screen and(min-width: 768px) {
+      @include fonts(48px, normal, 1.14, 0.06em);
+      margin-bottom: 91px;
+    }
+    @media screen and(min-width: 1280px) {
+      @include fonts(58px, normal, 1.133, 0.06em);
+      margin-bottom: 97px;
+    }
   }
 }
 
@@ -39,20 +47,31 @@
     display: flex;
     justify-content: flex-end;
     margin-bottom: 46px;
+    @media screen and (min-width: 1280px) {
+      margin-bottom: 50px;
+    }
   }
 }
 
 .footer__list > li:not(:first-child) {
   margin-left: 28.5px;
+  @media screen and (min-width: 768px) {
+    margin-left: 30px;
+  }
+  @media screen and (min-width: 1280px) {
+    margin-left: 25px;
+  }
 }
 
 .footer-social__link {
   width: 100%;
   height: 100%;
-  text-align: center;
+
   background-color: $pink-dark-bg;
   display: flex;
   border-radius: 50%;
+  align-items: center;
+  justify-content: center;
 }
 .footer-social__link {
   &:hover,
@@ -62,17 +81,21 @@
 }
 
 .footer-social {
-  &__svg {
-    // width: 55%;
-    height: 55%;
-    margin: auto;
-    display: flex;
-    // margin-top: 6.8px;
-  }
+  // &__svg {
+  //   // width: 55%;
+  //   height: 55%;
+  //   margin: auto;
+  //   display: flex;
+  //   // margin-top: 6.8px;
+  // }
 
   &__li {
     width: 32px;
     height: 32px;
+    @media screen and (min-width: 768px) {
+      width: 34px;
+      height: 34px;
+    }
   }
 }
 
@@ -82,8 +105,14 @@
   &__text {
     display: flex;
     justify-content: flex-end;
-    @include fonts(12px, bold, 1.833, 0.02em);
+    @include fonts(12px, 700, 1.86, 0.02em);
     margin-bottom: 43px;
+    @media screen and (min-width: 768px) {
+      @include fonts(14px, 700, 1.86, 0.02em);
+    }
+    @media screen and (min-width: 1280px) {
+      @include fonts(16px, 700, 1.86, 0.02em);
+    }
   }
   &__tel {
     color: $accent-color;
@@ -95,9 +124,9 @@
   padding-top: 9px;
   padding-bottom: 11px;
   color: $text;
-  font-size: 12px;
-  font-weight: bold;
-  line-height: 22px;
+
+  font-weight: 700;
+  line-height: 1.52;
   margin: auto;
   text-align: center;
 
@@ -107,6 +136,7 @@
     padding-top: 29px;
     padding-bottom: 18px;
     width: auto;
+    line-height: 1.86;
   }
 }
 
