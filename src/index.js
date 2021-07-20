@@ -33,3 +33,15 @@ import './sass/main.scss';
   }
 })();
 
+// masonry -----------------------------------------------------------------/
+
+$('.grid').masonry({
+  itemSelector: '.grid-item',
+  columnWidth: 160
+});
+
+
+
+
+
+
