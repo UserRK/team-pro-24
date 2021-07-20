@@ -10,15 +10,17 @@
     margin-bottom: 17px;
     @media screen and(min-width: 768px) {
       @include fonts(26px, normal, 1.154, 0.04em);
+      margin-bottom: 16px;
     }
     @media screen and(min-width: 1280px) {
       @include fonts(30px, normal, 1.133, 0.04em);
+      margin-bottom: 15px;
     }
   }
 
   &__header {
     font-family: Titan One;
-    font-style: Regular;
+
     color: $accent-color;
     line-height: 100%;
     @include fonts(34px, normal, 1.147, 00.04em);
@@ -77,17 +79,23 @@
   &:hover,
   &:focus {
     background-color: $accent-color;
+    transition: $transition;
   }
 }
 
 .footer-social {
-  // &__svg {
-  //   // width: 55%;
-  //   height: 55%;
-  //   margin: auto;
-  //   display: flex;
-  //   // margin-top: 6.8px;
-  // }
+  &__svg {
+    width: 62.49%;
+    height: 62.49%;
+    // width: 21.3px;
+    // height: 21.3px;
+
+    display: flex;
+    // margin-top: 6.8px;
+  }
+  &__telegram {
+    margin-right: 2px;
+  }
 
   &__li {
     width: 32px;
@@ -121,8 +129,8 @@
 }
 
 .footer__copyright {
-  padding-top: 9px;
-  padding-bottom: 11px;
+  padding-top: 22px;
+  padding-bottom: 25px;
   color: $text;
 
   font-weight: 700;
@@ -137,6 +145,11 @@
     padding-bottom: 18px;
     width: auto;
     line-height: 1.86;
+  }
+
+  @media screen and(min-width: 1200px) {
+    padding-top: 9px;
+    padding-bottom: 11px;
   }
 }
 
