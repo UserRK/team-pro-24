@@ -13,9 +13,7 @@
   @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
     background-image: url(../images/about/milk-bg_320px_2x-min.png);
   }
-  // @media screen and (min-width: 480px) and (max-width: 767px) {
-  //   background-image: url(../images/about/milk-bg_320px_1x-min.png);
-  // }
+
   @media (min-device-pixel-ratio: 2) and (min-width: 480px) and (max-width: 767px),
     (min-resolution: 192dpi) and (min-width: 480px) and (max-width: 767px),
     (min-resolution: 2dppx) and (min-width: 480px) and (max-width: 767px) {
