@@ -4,12 +4,10 @@
   background-repeat: no-repeat;
   background-size: contain;
   background-size: 100%;
-  background-position-x: center;
+  background-position-y: 79%;
 
   @media screen and (max-width: 767px) {
     background-image: url(../images/about/milk-bg_320px_1x-min.png);
-    background-position-y: 79%;
-    padding-bottom: 140px;
   }
 
   @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
@@ -30,7 +28,6 @@
 
   @media screen and (min-width: 1280px) {
     background-image: url(../images/about/milk-bg_1280px_1x-min.png);
-    background-position-y: 50%;
   }
   @media (min-device-pixel-ratio: 2) and (min-width: 1280px),
     (min-resolution: 192dpi) and (min-width: 1280px),
@@ -112,6 +109,13 @@
   text-align: start;
   padding-left: 30px;
   padding-right: 30px;
+  @media screen and (min-width: 768px) {
+    padding-top: 50px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    padding-top: 56px;
+  }
 }
 
 .about__text {
@@ -162,8 +166,6 @@
 }
 
 .about__icon {
-  height: 8px;
-  width: 4px;
   stroke: currentColor;
   margin-left: 13px;
 }
