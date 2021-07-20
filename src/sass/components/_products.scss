@@ -75,6 +75,16 @@
   padding-bottom: 41px;
   padding-left: 40px;
   padding-right: 40px;
+
+  transition: all 0.2s ease-in-out;
+
+  &:hover,
+  &:focus {
+    transform: scale(1.1);
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
+
   &--ice-cream {
     background-color: $pink-icecream-bg;
   }
@@ -290,8 +300,23 @@
   height: 40px;
   background-color: $white;
   color: $accent-color;
+
+  transition: all 0.2s ease-in-out;
+
+  &:hover,
+  &:focus {
+    transform: scale(1.1);
+    box-shadow: 5px 5px 200px 5px $accent-color;
+  }
 }
 
 .icon-right {
   fill: currentColor;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  transition: all 0.5s ease-in-out;
+}
+
+.products__link:hover .icon-right,
+.products__link:focus .icon-right {
+  transform: rotate(360deg);
 }
