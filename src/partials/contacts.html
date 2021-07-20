@@ -76,7 +76,11 @@
       </ul>
       <ul class="contacts-btn">
         <li class="contacts-btn__list">
-          <button type="button" class="contacts-btn__button contacts-btn__button--primary">
+          <button
+            type="button"
+            class="contacts-btn__button contacts-btn__button--primary"
+            data-modal-open
+          >
             Our Locations
             <svg width="10" height="10" class="contacts-btn__icon">
               <use href="./images/icons/icon-defs.svg#icon-right"></use>
@@ -92,6 +96,28 @@
           </button>
         </li>
       </ul>
+    </div>
+  </div>
+
+  <div class="backdrop is-hidden" data-modal>
+    <div class="modal">
+      <button type="button" class="modal__btn" data-modal-close>
+        <svg width="14" height="14">
+          <use href="./images/icons/icon-defs.svg#icon-close"></use>
+        </svg>
+      </button>
+      <p class="modal__title">Our Location</p>
+      <div class="modal__maps">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d23804.66396994039!2d-87.71966686897035!3d41.7726477762702!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880e2fd66fe2cbe5%3A0xe64a5e3d87b9628!2z0KfQuNC60LDQs9C-INCb0L7QvSwg0KfQuNC60LDQs9C-LCDQmNC70LvQuNC90L7QudGBLCDQodCo0JA!5e0!3m2!1sru!2sua!4v1626784894024!5m2!1sru!2sua"
+          width="300"
+          height="300"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          border-radius="10px"
+        ></iframe>
+      </div>
     </div>
   </div>
 </section>
