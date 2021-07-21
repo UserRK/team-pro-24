@@ -54,7 +54,7 @@
 
     &:hover,
     &:focus {
-      fill: $white;
+      fill: white;
     }
 
     @media screen and (min-width: 768px) {
@@ -73,7 +73,7 @@
 
     &:hover,
     &:focus {
-      fill: $white;
+      fill: white;
     }
   }
 
@@ -257,7 +257,7 @@
     &:hover,
     &:focus {
       transform: scale(1.1);
-      box-shadow: 5px 5px 200px 5px $accent-color;
+      box-shadow: 5px 5px 100px 1px $accent-color;
     }
 
     @media screen and (max-width: 1279px) {
