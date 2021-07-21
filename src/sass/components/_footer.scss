@@ -107,10 +107,10 @@
       height: 34px;
       border-radius: 50%;
       animation: pulse-icon 1500ms infinite 750ms;
-      animation-iteration-count: 1;
       &:hover,
       &focus {
-        animation: pulse-icon 1500ms infinite 750ms;
+        transform: scale(1.02);
+        text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.5);
       }
     }
   }
