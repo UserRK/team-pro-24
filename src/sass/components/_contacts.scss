@@ -332,16 +332,25 @@
 }
 
 #upbutton {
-  bottom: 150px;
+  bottom: 20px;
   right: 15px;
   cursor: pointer;
   display: none;
   position: fixed;
   z-index: 999;
+
+  @media screen and (min-width: 768px) {
+    bottom: 15px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    bottom: 45px;
+    right: 20px;
+  }
 }
 
 .rocket {
-  width: 32px;
-  height: 32px;
+  width: 38px;
+  height: 38px;
   fill: $accent-color;
 }
