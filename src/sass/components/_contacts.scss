@@ -24,6 +24,9 @@
     margin-bottom: 86px;
     background-image: url('../images/contacts/contacts-bg.png');
     background-size: 1280px 382px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-size: 100%;
   }
 }
 @media (min-device-pixel-ratio: 2) and (min-width: 1280px),
@@ -185,7 +188,7 @@
   width: 161px;
   padding: 10px 17px;
   stroke: $white;
-  @include transition(background-color);
+  transition: all 0.2s ease-in-out;
   @media screen and (min-width: 768px) {
     width: 191px;
     padding: 10px 30px;
@@ -286,10 +289,11 @@
   background: transparent;
   border-radius: 50%;
   cursor: pointer;
-  @include transition(fill);
-  &:hover,
-  &:focus {
-    fill: $button-hover-accent;
+  @include transition(stroke);
+  stroke: $white;
+  &:hover .modal-contacts__icon,
+  &:focus .modal-contacts__icon {
+    stroke: $button-hover-accent;
   }
 }
 .modal-contacts__title {
