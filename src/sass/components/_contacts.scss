@@ -330,3 +330,18 @@
     background-size: contain;
   }
 }
+
+#upbutton {
+  bottom: 150px;
+  right: 15px;
+  cursor: pointer;
+  display: none;
+  position: fixed;
+  z-index: 999;
+}
+
+.rocket {
+  width: 32px;
+  height: 32px;
+  fill: $accent-color;
+}

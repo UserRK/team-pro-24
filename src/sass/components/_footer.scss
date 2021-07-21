@@ -45,6 +45,7 @@
 
 // СПИСОК
 .footer {
+  position: relative;
   &__list {
     display: flex;
     justify-content: flex-end;
@@ -74,12 +75,12 @@
   border-radius: 50%;
   align-items: center;
   justify-content: center;
+  transition: transform $transition;
 }
 .footer-social__link {
   &:hover,
   &:focus {
     background-color: $accent-color;
-    transition: $transition;
     transform: scale(120%);
   }
 }
