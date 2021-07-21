@@ -16,13 +16,12 @@ import './sass/main.scss';
   }
 })();
 
-// modal-window----------------------------------------------------------/
-
+// modal-locations----------------------------------------------------------/
 (() => {
   const refs = {
-    openModalBtn: document.querySelector('[data-modal-open]'),
-    closeModalBtn: document.querySelector('[data-modal-close]'),
-    modal: document.querySelector('[data-modal]'),
+    openModalBtn: document.querySelector('[location-modal-open]'),
+    closeModalBtn: document.querySelector('[location-modal-close]'),
+    modal: document.querySelector('[location-modal]'),
   };
 
   refs.openModalBtn.addEventListener('click', toggleModal);
@@ -32,6 +31,7 @@ import './sass/main.scss';
     refs.modal.classList.toggle('is-hidden');
   }
 })();
+
 
 //modal-about----------------------------------------------------------------/
 (() => {
