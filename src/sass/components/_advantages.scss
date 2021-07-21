@@ -1,13 +1,20 @@
 .advantages {
   background-color: $pink-light-bg;
   margin: 0;
-  padding-top: 20px;
+  padding-top: 23px;
   width: 100%;
 
   &__li {
     margin: 0;
     width: 230px;
     position: relative;
+    display: block;
+    transition: transform $transition;
+
+    &:hover,
+    &:focus {
+      transform: scale(1.2);
+    }
 
     &--milk::before {
       content: '';
