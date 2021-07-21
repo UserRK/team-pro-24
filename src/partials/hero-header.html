@@ -21,11 +21,11 @@
         <!-- Header-Buttons -->
         <div class="header__buttons">
             <button type="button" class="header__button-menu" id="mobile-menu" js-open-menu>
-                <svg width="20" height="20" aria-label="mobile menu switcher">
-                    <use class="header__icon-menu" href="./images/icons/icon-defs.svg#icon-Burger" ></use>
+                <svg class="header__icon-menu" width="20" height="20" aria-label="mobile menu switcher">
+                    <use href="./images/icons/icon-defs.svg#icon-menu" ></use>
                 </svg>
             </button>
-            <button type="button" class="header__button-buy">Buy now &nbsp; 
+            <button type="button" class="header__button-buy" data-modal-open >Buy now &nbsp; 
                 <svg width="10" height="10">
                     <use class="header__icon-right" href="./images/icons/icon-defs.svg#icon-icon-right"></use>
                 </svg>
@@ -36,12 +36,12 @@
     <!-- Mobile menu -->
     <div class="mobile-menu is-open" js-menu>
         <button type="button" class="mobile-menu__button-close" js-close-menu>
-            <svg width="14" height="14" aria-label="mobile menu switch off">
-                <use class="mobile-menu__icon-close" href="./images/icons/icon-defs.svg#icon-close" ></use>
+            <svg width="30" height="30" aria-label="mobile menu switch off">
+                <use class="mobile-menu__icon-close" href="./images/icons/icon-defs.svg#icon-cross" ></use>
             </svg>
         </button>
 
-        <button type="button" class="mobile-menu__button-buy">Buy now &nbsp; 
+        <button type="button" class="mobile-menu__button-buy" buy-modal-open >Buy now &nbsp; 
             <svg width="10" height="10">
                 <use class="header__icon-right" href="./images/icons/icon-defs.svg#icon-icon-right"></use>
             </svg>
@@ -65,10 +65,10 @@
                 </h1>
                 <ul class="hero-title__buttons-list list">
                     <li class="hero-title__buttons-item">
-                        <a href="#" class="hero-title__buttons-link hero-title__buttons-link--red link">Products</a>
+                        <a href="#" class="hero-title__buttons-link hero-title__buttons-link--red">Products</a>
                     </li>
                     <li class="hero-title__buttons-item hero-title__buttons-item--white">
-                        <a href="#" class="hero-title__buttons-link link">How it's made?</a>
+                        <a href="#" class="hero-title__buttons-link">How it's made?</a>
                     </li>
                 </ul>
             </div>   
@@ -92,7 +92,7 @@
                     <p class="hero-milk__text">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
                     </p>
-                    <a href="#" class="hero-milk__icon">
+                    <a href="#made" class="hero-milk__icon">
                         <svg class="hero-milk__icon-right hero-milk__icon-right--desktop" width="10" height="10">
                             <use  href="./images/icons/icon-defs.svg#icon-arrow-right2"></use>
                         </svg>
