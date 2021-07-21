@@ -117,8 +117,13 @@
     }
 
     &__item {
+      transition: transform $transition;
       &:not(:last-child) {
         margin-right: 35px;
+      }
+      &:hover,
+      &:focus {
+        transform: scale(120%) rotate(-15deg);
       }
     }
 
