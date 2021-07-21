@@ -187,13 +187,17 @@
 .contacts-btn__button--primary {
   &:focus,
   &:hover {
+    transform: scale(1.1);
     background: $button-hover-accent;
+    box-shadow: 5px 5px 100px 1px $accent-color;
   }
 }
 .contacts-btn__button--secondary {
   &:focus,
   &:hover {
+    transform: scale(1.1);
     background: $button-hover;
+    box-shadow: 5px 5px 100px 1px $accent-color;
   }
 }
 .contacts-btn__list {

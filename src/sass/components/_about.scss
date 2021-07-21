@@ -154,13 +154,17 @@
   height: 44px;
   width: 176px;
   color: $accent-color;
+  transition: all 0.2s ease-in-out;
+
+  &:hover,
+  &:focus {
+    transform: scale(1.1);
+    box-shadow: 5px 5px 100px 1px $accent-color;
+    background-color: $button-hover;
+  }
 
   @media screen and (min-width: 768px) {
     margin: 0;
-  }
-
-  &:hover {
-    background-color: $button-hover;
   }
 }
 
