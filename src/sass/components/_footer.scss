@@ -80,6 +80,7 @@
   &:focus {
     background-color: $accent-color;
     transition: $transition;
+    transform: scale(120%);
   }
 }
 
