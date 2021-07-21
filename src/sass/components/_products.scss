@@ -78,10 +78,22 @@
 
   transition: all 0.2s ease-in-out;
 
-  &:hover,
-  &:focus {
+  &:first-child:hover,
+  &:first-child:focus {
     transform: scale(1.05);
     box-shadow: $contacts-shine;
+  }
+
+  &:nth-child(2):hover,
+  &:nth-child(2):focus {
+    transform: scale(1.05);
+    box-shadow: $ice-coffee-shine;
+  }
+
+  &:nth-child(3):hover,
+  &:nth-child(3):focus {
+    transform: scale(1.05);
+    box-shadow: $milkshake-shine;
   }
 
   &--ice-cream {
