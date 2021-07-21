@@ -469,11 +469,11 @@
       width: 26px;
       height: 26px;
     }
-  }
 
-  &:hover .hero-milk__icon-right,
-  &:focus .hero-milk__icon-right {
-    transform: rotate(360deg);
+    &:hover .hero-milk__icon-right,
+    &:focus .hero-milk__icon-right {
+      transform: rotate(360deg);
+    }
   }
 
   &__icon-right {
