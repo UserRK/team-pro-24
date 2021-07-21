@@ -67,6 +67,22 @@ import './sass/main.scss';
   }
 })();
 
+// Mobile-buy-burger-----------------------------------------------------------------------
+(() => {
+  const refs = {
+    openModalBtn: document.querySelector('[buy-modal-open-mobile]'),
+    closeModalBtn: document.querySelector('[buy-modal-close-mobile]'),
+    modal: document.querySelector('[buy-modal]'),
+  };
+
+  refs.openModalBtn.addEventListener('click', toggleModal);
+  refs.closeModalBtn.addEventListener('click', toggleModal);
+
+  function toggleModal() {
+    refs.modal.classList.toggle('is-hidden');
+  }
+})();
+
 // slide-------------------------------------------------------------------------/
 
 $(function () {
