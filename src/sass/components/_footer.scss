@@ -104,6 +104,8 @@
     @media screen and (min-width: 768px) {
       width: 34px;
       height: 34px;
+      border-radius: 50%;
+      animation: pulse-icon 1500ms infinite 750ms;
     }
   }
 }
@@ -126,6 +128,11 @@
   &__tel {
     color: $accent-color;
     margin-left: 5px;
+    animation: icon-animation 3000ms infinite 2000ms;
+  }
+  &__tel:hover {
+    animation: icon-hover 500ms ease-in-out;
+    animation-fill-mode: forwards;
   }
 }
 

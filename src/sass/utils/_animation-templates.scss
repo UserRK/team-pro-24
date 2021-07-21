@@ -28,6 +28,55 @@
   }
 }
 
+@-webkit-keyframes pulse-icon {
+  0% {
+    -webkit-box-shadow: 0 0 0 0 rgba(204, 44, 71, 0.4);
+  }
+  70% {
+    -webkit-box-shadow: 0 0 0 50px rgba(204, 169, 44, 0);
+  }
+  100% {
+    -webkit-box-shadow: 0 0 0 0 rgba(204, 169, 44, 0);
+  }
+}
+@keyframes pulse-icon {
+  0% {
+    -moz-box-shadow: 0 0 0 0 rgba(204, 44, 44, 0.4);
+    box-shadow: 0 0 0 0 rgba(204, 44, 97, 0.5);
+  }
+  70% {
+    -moz-box-shadow: 0 0 0 20px rgba(204, 169, 44, 0);
+    box-shadow: 0 0 0 20px rgba(204, 169, 44, 0);
+  }
+  100% {
+    -moz-box-shadow: 0 0 0 0 rgba(204, 169, 44, 0);
+    box-shadow: 0 0 0 0 rgba(204, 169, 44, 0);
+  }
+}
+
+@keyframes icon-animation {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  50% {
+    transform: rotate(380deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes icon-hover {
+  0% {
+    transform: skew(0deg);
+  }
+
+  100% {
+    transform: skew(-10deg, -10deg);
+  }
+}
+
 // Cильная тряска ---------------------------------------------------/
 // Подключается через добавление класса shake-hard к элементу
 
