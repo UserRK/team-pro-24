@@ -464,7 +464,13 @@
     }
   }
 
+  &:hover .hero-milk__icon-right,
+  &:focus .hero-milk__icon-right {
+    transform: rotate(360deg);
+  }
+
   &__icon-right {
+    transition: all 0.5s ease-in-out;
     @media screen and (min-width: 768px) and (max-width: 1279px) {
       &--desktop {
         display: none;
