@@ -67,6 +67,23 @@ import './sass/main.scss';
   }
 })();
 
+// modal-mobile-menu--------------------------------------------------------------/
+
+(() => {
+  const refs = {
+    openModalBtn: document.querySelector('[buy-mobile-modal-open]'),
+    closeModalBtn: document.querySelector('[buy-mobile-modal-close]'),
+    modal: document.querySelector('[buy-modal]'),
+  };
+
+  refs.openModalBtn.addEventListener('click', toggleModal);
+  refs.closeModalBtn.addEventListener('click', toggleModal);
+
+  function toggleModal() {
+    refs.modal.classList.toggle('is-hidden');
+  }
+})();
+
 // slide-------------------------------------------------------------------------/
 
 $(function () {
