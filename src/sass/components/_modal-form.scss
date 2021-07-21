@@ -47,17 +47,18 @@
   }
 
   &__title {
-    padding: 150px 40px 2px 40px;
+    padding: 70px 40px 70px 40px;
     margin-bottom: 10px;
     text-align: center;
     font-family: Titan One;
-    font-size: 32px;
+    font-size: 54px;
     line-height: 1.15;
     text-align: center;
-    letter-spacing: 0.2em;
+    letter-spacing: 0.01em;
     color: $white;
     text-shadow: 4px 3px 4px rgba(78, 78, 78, 0.5);
     text-transform: uppercase;
+    transform: rotate(-10deg);
   }
 
   &__label {
@@ -156,6 +157,7 @@
     &:hover {
       background: $button-hover;
       cursor: pointer;
+      box-shadow: $button-shine-icon;
     }
   }
 

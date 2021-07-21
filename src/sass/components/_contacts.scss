@@ -208,7 +208,7 @@
   &:hover {
     transform: scale(1.1);
     background: $button-hover-accent;
-    box-shadow: 5px 5px 100px 1px $accent-color;
+    box-shadow: $button-shine;
   }
 }
 .contacts-btn__button--secondary {
@@ -216,7 +216,7 @@
   &:hover {
     transform: scale(1.1);
     background: $button-hover;
-    box-shadow: 5px 5px 100px 1px $accent-color;
+    box-shadow: $button-shine;
   }
 }
 .contacts-btn__list {
