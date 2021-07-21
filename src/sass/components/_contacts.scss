@@ -242,14 +242,14 @@
   height: 100%;
   background: rgba(247, 189, 246, 0.2);
   opacity: 1;
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 0.5s cubic-bezier(0.4, 0, 0.2, 1);
   z-index: 10000;
 }
 .backdrop-contacts.is-hidden {
   opacity: 0;
   pointer-events: none;
-  & .modal {
-    transform: translate(-50%, -50%) scale(0.9);
+  & .modal-contacts {
+    transform: translate(-50%, -50%) scale(0.6);
   }
 }
 
@@ -258,21 +258,23 @@
   top: 50%;
   left: 50%;
   padding: 90px 40px;
+  transform: translate(-50%, -50%) scale(1);
   max-width: 100%;
   max-height: 600px;
   background-image: url('../images/modal/modal-roof.png'), url('../images/modal/modal-bg-pink.jpg');
   background-repeat: no-repeat;
-  background-size: 100% 100%;
+  background-size: cover;
   box-shadow: $shadow;
   border-radius: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  transform: translate(-50%, -50%) scale(1);
-  @include transition(transform);
+
+  transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
 
   @media screen and (min-width: 460px) and (max-width: 1279px) {
     width: 450px;
+    width: 90vw;
   }
   @media screen and (min-width: 1280px) {
     width: 528px;

@@ -4,7 +4,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: rgba(0, 0, 0, 0.2);
   opacity: 1;
   overflow-y: scroll;
 
@@ -28,8 +28,7 @@
   border-radius: 20px;
   padding: 40px;
   background-color: $white;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: $shadow;
   background-repeat: no-repeat;
   background-size: cover;
   background-image: url(../images/modal-about/milk-with-strawberry.jpg);
