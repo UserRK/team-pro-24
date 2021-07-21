@@ -298,6 +298,8 @@
 .hero-icecream {
   position: absolute;
   bottom: 0;
+  animation: move 1.5s;
+  z-index: -2;
 
   @media screen and (max-width: 767px) {
     left: 40%;
