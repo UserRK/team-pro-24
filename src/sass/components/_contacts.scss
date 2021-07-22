@@ -352,7 +352,20 @@
 }
 
 .rocket {
+  display: block;
+  position: absolute;
+  top: 10%;
+  left: 12%;
   width: 38px;
   height: 38px;
   fill: $accent-color;
+}
+
+.rocket-wrapper {
+  display: block;
+  position: relative;
+  width: 52px;
+  height: 52px;
+  background-color: rgba(255, 165, 186, 0.2);
+  border-radius: 50%;
 }
