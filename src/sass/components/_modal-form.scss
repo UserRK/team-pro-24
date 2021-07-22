@@ -14,10 +14,14 @@
   }
 }
 
+
 .modal {
-  position: absolute;
+  z-index: 10;
+  position: fixed;
   left: 50%;
   top: 50%;
+  border-radius: 20px;
+  // overflow: auto;
   transform: translate(-50%, -50%) scale(1);
 
   background: $white;
@@ -25,32 +29,39 @@
     url('../images/modal/modal-ice-cream-450x610px.jpg');
 
   background-repeat: no-repeat;
-  background-position: center;
   background-size: cover;
 
   box-shadow: 0px 0px 80px 26px rgba(0, 0, 0, 0.22);
-  border-radius: 20px;
-
+  
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+
 
   @media screen and (max-width: 1199px) {
     max-width: 450px;
     width: 90vw;
-    max-height: 609px;
-    height: 90vh;
+    max-height: 100%;
   }
 
   @media screen and (min-width: 1200px) {
-    min-width: 528px;
-    min-height: 581px;
+    width: 528px;
+    max-height: 100%;
+    // border-radius: 20px;
+  }
+
+  &__form {
+    padding-top: 130px;
+    padding-bottom: 30px;
+    padding-left: 40px;
+    padding-right: 40px;
+    height: auto;
   }
 
   &__title {
-    padding: 70px 40px 10px 40px;
     margin-bottom: 10px;
     text-align: center;
     font-family: Titan One;
-    font-size: 60px;
+    font-size: 40px;
     line-height: 1.15;
     text-align: center;
     letter-spacing: 0.01em;
@@ -62,8 +73,7 @@
   &__label {
     display: flex;
     flex-direction: column;
-    margin-left: 40px;
-    margin-right: 40px;
+    
     margin-bottom: 10px;
 
     font-size: 14px;
@@ -187,25 +197,30 @@
 
   &__close {
     position: absolute;
-    right: 8px;
     top: 8px;
+    right: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: $white;
+    stroke: rgba(0, 0, 0, 0.6);
+    border: none;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      stroke 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
     width: 30px;
     height: 30px;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    background-color: $white;
-    border-radius: 50%;
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    fill: $accent-color;
-
-    &:hover {
-      background-color: $pink-light-bg;
+    &:hover,
+    &:focus {
+      cursor: pointer;
+      stroke: $accent-color;
     }
-  }
+    }
 
   &__select-form {
     text-align: center;
@@ -238,7 +253,7 @@
 
   &__select-ice {
     border-radius: 15px;
-    width: 50%;
+    width: 70%;
     font-family: Titan One;
     font-size: 16px;
     color: $accent-color;
