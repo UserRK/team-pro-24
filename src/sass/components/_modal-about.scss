@@ -24,6 +24,7 @@
   position: absolute;
   top: 50%;
   left: 50%;
+  // overflow: auto;
   transform: translate(-50%, -50%) scale(1);
   border-radius: 20px;
   padding: 40px;
@@ -38,10 +39,12 @@
   @media screen and (max-width: 1199px) {
     max-width: 450px;
     width: 90vw;
+    max-height: 100%;
   }
 
   @media screen and (min-width: 1200px) {
     width: 528px;
+    max-height: 100%;
   }
 }
 
